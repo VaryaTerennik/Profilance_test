@@ -1,0 +1,57 @@
+@import "../variables.scss";
+
+* {
+  box-sizing: border-box;
+  color: $main-color;
+}
+
+@mixin box {
+  display: flex;
+  flex-direction: column;
+}
+
+@mixin forminner {
+  width: 400px;
+  height: 50px;
+  margin: 20px auto;
+}
+
+.popup {
+  position: fixed;
+  top: 4em;
+  left: 0;
+  background-color: $back-opac-color;
+  width: 100%;
+  height: 100vh;
+}
+
+.popup__wrapper {
+  position: relative;
+  width: 500px;
+  height: 500px;
+  margin: auto;
+  top: 10%;
+  @include box;
+  background-color: white;
+}
+
+.popup__content {
+  @include box;
+  width: 100%;
+  .popup__title {
+    font-size: 1.3em;
+    width: 100%;
+    text-align: center;
+  }
+  .popup__form {
+    @include box;
+    margin-top: 20px;
+  }
+  .popup__form-input {
+    @include forminner;
+  }
+  .popup__button {
+    @include forminner;
+    font-size: 1em;
+  }
+}

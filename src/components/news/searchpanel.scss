@@ -1,0 +1,37 @@
+@import "../variables.scss";
+
+* {
+  box-sizing: border-box;
+  color: $main-color;
+}
+
+.search {
+  width: 100%;
+  .search__wrappep {
+    width: 70%;
+    margin: auto;
+    .search__line {
+      height: 60px;
+      background-color: $main-color;
+      display: flex;
+      justify-content: center;
+      form {
+        width: 80%;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        .search__title {
+          color: white;
+          margin: 10px 20px;
+          font-size: 1.2em;
+          font-weight: 700;
+        }
+        .search__input {
+          width: 100%;
+          height: 40px;
+          margin: 10px auto;
+        }
+      }
+    }
+  }
+}

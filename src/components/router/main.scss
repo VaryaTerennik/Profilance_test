@@ -1,0 +1,18 @@
+@import "../variables.scss";
+
+* {
+  box-sizing: border-box;
+  color: $main-color;
+}
+
+.main {
+  width: 100%;
+  .main__content {
+    width: 100%;
+    .main__item {
+      font-size: 2em;
+      color: $main-color;
+      text-align: center;
+    }
+  }
+}

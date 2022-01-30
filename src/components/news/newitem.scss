@@ -1,0 +1,49 @@
+@import "../variables.scss";
+
+* {
+  box-sizing: border-box;
+  color: $main-color;
+}
+
+@mixin box {
+  display: flex;
+  flex-direction: column;
+}
+
+@mixin shadow {
+  -webkit-box-shadow: 4px 4px 8px 0px rgba(34, 60, 80, 0.2);
+  -moz-box-shadow: 4px 4px 8px 0px rgba(34, 60, 80, 0.2);
+  box-shadow: 4px 4px 8px 0px rgba(34, 60, 80, 0.2);
+}
+
+.new {
+  width: 97%;
+  height: 200px;
+  @include shadow;
+  margin: 20px auto;
+  .new__content {
+    @include box;
+    .new__title {
+      width: 100%;
+      text-align: center;
+    }
+    .new__text {
+      height: 110px;
+      overflow-y: scroll;
+    }
+
+    .new__status {
+      color: $second-color;
+      font-size: 1.1em;
+      font-weight: 600;
+    }
+    .new__buttons {
+      width: 99%;
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+    }
+    .new__button {
+    }
+  }
+}
